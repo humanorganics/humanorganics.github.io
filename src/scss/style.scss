@@ -1,5 +1,26 @@
-$bg-color: blue;
+@import url('https://fonts.googleapis.com/css?family=Raleway:200i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+$bg-color: rgb(39, 39, 39);
 
 body{
   background: $bg-color;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  width: 100%;
+  background: none !important;
+  
+  @media(max-width: 34em){
+    background: black !important;
+  }
+}
+
+.navbar-toggler{
+  cursor: pointer;
+  outline: 0;
 }
