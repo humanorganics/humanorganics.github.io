@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200i');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-$bg-color: rgb(39, 39, 39);
+$bg-color: rgb(255, 250, 230);
 
 body{
   background: $bg-color;
@@ -16,11 +16,29 @@ body{
   background: none !important;
   
   @media(max-width: 34em){
-    background: black !important;
+    background: rgb(32, 32, 32) !important;
   }
+}
+
+.nav-link{
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .navbar-toggler{
   cursor: pointer;
   outline: 0;
+}
+
+.nav-item{
+  padding: 0 1rem;
+  @media(max-width: 34em){
+    padding: 0;
+  }
+  .nav-link{
+    @media(max-width: 34em){
+      font-weight: normal;
+      color: fff !important;
+    }
+  }
 }

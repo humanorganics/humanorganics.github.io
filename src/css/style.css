@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200i");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 body {
-  background: #272727;
+  background: #fffae6;
   color: white;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -12,8 +12,25 @@ body {
   background: none !important; }
   @media (max-width: 34em) {
     .navbar {
-      background: black !important; } }
+      background: #202020 !important; } }
+
+.nav-link {
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .navbar-toggler {
   cursor: pointer;
   outline: 0; }
+
+.nav-item {
+  padding: 0 1rem; }
+  @media (max-width: 34em) {
+    .nav-item {
+      padding: 0; } }
+  @media (max-width: 34em) {
+    .nav-item .nav-link {
+      font-weight: normal;
+      color: fff !important; } }
+
+li {
+  border: 2px; }
